@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package order;
+
+option go_package = "/rpc;orderrpc";
+
+// Order a customer order.
+message Order {
+
+    // Unique identifier of the order.
+    string id = 1;
+}
+
+service Service {
+    // Fetch all existing orders in the system.
+    rpc ListOrders(ListOrdersRequest) returns (ListOrdersResponse);
+}
+
+message ListOrdersRequest {}
+
+message ListOrdersResponse {
+    repeated Order orders = 1;
+}
