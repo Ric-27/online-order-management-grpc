@@ -4,20 +4,47 @@ package order;
 
 option go_package = "/rpc;orderrpc";
 
+message Address {
+    string street = 1;
+    string postal = 2;
+    string city = 3;
+    string country = 4;
+}
+
 // Order a customer order.
 message Order {
-
     // Unique identifier of the order.
     string id = 1;
+    //customer first name
+    string fName = 2;
+    //customer last name
+    string lName = 3;
+    //product pair, each product id is accompanied of the quantity
+    map<string,int32> productList = 5;
+    //customer address
+    Address address = 6;
 }
+
 
 service Service {
     // Fetch all existing orders in the system.
     rpc ListOrders(ListOrdersRequest) returns (ListOrdersResponse);
+    rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse);
 }
 
 message ListOrdersRequest {}
 
 message ListOrdersResponse {
     repeated Order orders = 1;
+}
+
+message CreateOrderRequest {
+    string fName = 1;
+    string lName = 2;
+    map<string,int32> productList = 3;
+    Address address = 4;
+}
+
+message CreateOrderResponse {
+    Order order = 1;
 }

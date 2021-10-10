@@ -29,11 +29,11 @@ message ListProductsResponse {
     repeated Product products = 1;
 }
 
-
 message ProductOfIdRequest {
     string id = 1;
 }
 
 message ProductOfIdResponse {
     Product product = 1;
+    string error = 2;
 }

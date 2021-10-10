@@ -23,5 +23,6 @@ func (s *service) ListProducts(ctx context.Context, r *productrpc.ListProductsRe
 	return &productrpc.ListProductsResponse{Products: s.s.Products()}, nil
 }
 func (s *service) ProductOfId(ctx context.Context, r *productrpc.ProductOfIdRequest) (*productrpc.ProductOfIdResponse, error) {
-	return &productrpc.ProductOfIdResponse{Product: s.s.Product(ProductOfIdRequest.id)}, nil
+	prod, err := s.s.Product(r.Id)
+	return &productrpc.ProductOfIdResponse{Product: prod}, err
 }
