@@ -3,9 +3,9 @@ package product
 import (
 	"context"
 
-	productrpc "github.com/bigbluedisco/tech-challenge/backend/v1/product/rpc"
+	productrpc "github.com/Ric-27/online-order-management-grpc/product/rpc"
 
-	"github.com/bigbluedisco/tech-challenge/backend/v1/store"
+	"github.com/Ric-27/online-order-management-grpc/store"
 )
 
 // Service holds RPC handlers for the product service. It implements the product.ServiceServer interface.

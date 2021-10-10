@@ -1,4 +1,5 @@
-module github.com/bigbluedisco/tech-challenge/backend/v1
+//module github.com/bigbluedisco/tech-challenge/backend/v1
+module github.com/Ric-27/online-order-management-grpc
 
 go 1.16
 

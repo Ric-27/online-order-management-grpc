@@ -5,7 +5,7 @@ package store
 import (
 	"testing"
 
-	"github.com/bigbluedisco/tech-challenge/backend/v1/order/rpc"
+	"github.com/Ric-27/online-order-management-grpc/order/rpc"
 	"github.com/stretchr/testify/suite"
 )
 

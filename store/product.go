@@ -6,7 +6,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/bigbluedisco/tech-challenge/backend/v1/product/rpc"
+	"github.com/Ric-27/online-order-management-grpc/product/rpc"
 	"github.com/pkg/errors"
 )
 

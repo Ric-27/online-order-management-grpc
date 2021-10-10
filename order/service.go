@@ -3,8 +3,8 @@ package order
 import (
 	"context"
 
-	orderrpc "github.com/bigbluedisco/tech-challenge/backend/v1/order/rpc"
-	"github.com/bigbluedisco/tech-challenge/backend/v1/store"
+	orderrpc "github.com/Ric-27/online-order-management-grpc/order/rpc"
+	"github.com/Ric-27/online-order-management-grpc/store"
 )
 
 // Service holds RPC handlers for the order service. It implements the orderrpc.ServiceServer interface.

@@ -6,9 +6,9 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/bigbluedisco/tech-challenge/backend/v1/product"
-	productpb "github.com/bigbluedisco/tech-challenge/backend/v1/product/rpc"
-	"github.com/bigbluedisco/tech-challenge/backend/v1/store"
+	"github.com/Ric-27/online-order-management-grpc/product"
+	productpb "github.com/Ric-27/online-order-management-grpc/product/rpc"
+	"github.com/Ric-27/online-order-management-grpc/store"
 	"google.golang.org/grpc"
 )
 
